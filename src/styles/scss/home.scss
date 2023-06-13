@@ -1,0 +1,19 @@
+@use "./global.scss";
+
+.title {
+  h1 {
+    font-family: "Uertas Regular";
+    font-size: 90px;
+  }
+
+  .stroke {
+    color: rgba($color: #000000, $alpha: 0);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+
+    position: absolute;
+
+    top: 0;
+
+  }
+}

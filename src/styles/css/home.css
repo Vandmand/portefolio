@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Uertas Regular";
+  src: url("../fonts/UertasRegular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title h1 {
+  font-family: "Uertas Regular";
+  font-size: 90px;
+}
+.title .stroke {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  position: absolute;
+  top: 0;
+}
+
+/*# sourceMappingURL=home.css.map */

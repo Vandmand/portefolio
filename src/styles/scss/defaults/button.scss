@@ -1,0 +1,16 @@
+@use "colors";
+
+$button-rounding: 5px;
+
+@mixin fill-primary {
+  padding: 10px 30px; // Responsive units
+  background-color: colors.get-color(primary, 200);
+  color: colors.get-color(text, secondary);
+  border: 0;
+  border-radius: $button-rounding;
+}
+
+@mixin icon {
+
+}
+

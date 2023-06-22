@@ -7,4 +7,24 @@
   padding: 0;
 }
 
+a {
+  color: #fff;
+  text-decoration-line: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #252525;
+  color: #fff;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: #eb86fe;
+  color: #252525;
+  border: 0;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=global.css.map */

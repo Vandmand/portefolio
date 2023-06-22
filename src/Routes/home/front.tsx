@@ -1,3 +1,4 @@
+import Typography from '@mui/material/Typography'
 const generateStrokeEffect = (inputText: string, n: number) => {
   const strokes : JSX.Element[] = []
   for (let i = 0; i < n; i++) {
@@ -11,10 +12,8 @@ const generateStrokeEffect = (inputText: string, n: number) => {
 const FrontPage = () => {
 
   return (
-    <div className="title">
-      <h1 className="display">Ellie</h1>
-    </div>
-  );
+    <Typography variant="h1" color="primary">Hi i'm ellie</Typography>
+  )
 };
 
 export default FrontPage;

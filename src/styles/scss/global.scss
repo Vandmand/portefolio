@@ -1,3 +1,6 @@
+@use "defaults/colors" as *;
+@use "defaults/button";
+
 @font-face {
   font-family: "Uertas Regular";
   src: url("../fonts/UertasRegular.ttf");
@@ -7,3 +10,24 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  color: get-color(text, primary);
+  text-decoration-line: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: get-color(background, primary);
+  color: get-color(text, primary); 
+}
+
+button {
+  @include button.fill-primary();
+}
+
+
+
+
+

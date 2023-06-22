@@ -1,0 +1,40 @@
+$colors: (
+  primary: (
+    050: #f2e7fe,
+    100: #f4b9ff,
+    200: #eb86fe,
+    300: #e76aff,
+    400: #e03aff,
+    500: #d700ff,
+    600: #b300d5,
+    700: #9500b1,
+    800: #600072,
+  ),
+  secondary:
+  (
+    050: #c8fff4,
+    100: #70efde,
+    200: #03dac5,
+    300: #00c4b4,
+    400: #00b3a6,
+    500: #01a299,
+    600: #019592,
+    700: #018786,
+    800: #017374,
+    900: #005457,
+  ),
+  background:
+  (
+    primary: #252525,
+    secondary: #fff,
+  ),
+  text:
+  (
+    primary: #fff,
+    secondary: #252525,
+  ),
+);
+
+@function get-color($color, $value) {
+  @return map-get(map-get($colors, $color), $value)
+}

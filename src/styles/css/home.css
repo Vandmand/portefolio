@@ -7,8 +7,27 @@
   padding: 0;
 }
 
+a {
+  color: #fff;
+  text-decoration-line: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #252525;
+  color: #fff;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: #eb86fe;
+  color: #252525;
+  border: 0;
+  border-radius: 5px;
+}
+
 .title h1 {
-  font-family: "Uertas Regular";
   font-size: 90px;
 }
 .title .stroke {
@@ -17,6 +36,24 @@
   -webkit-text-stroke-color: black;
   position: absolute;
   top: 0;
+}
+
+header {
+  margin: 5px 20px;
+}
+header ul, header ol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header li {
+  list-style: none;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+header li * {
+  align-self: center;
 }
 
 /*# sourceMappingURL=home.css.map */

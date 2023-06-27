@@ -19,6 +19,15 @@ body {
   color: #fff;
 }
 
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+html::-webkit-scrollbar {
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0px;
+}
+
 button {
   padding: 10px 30px;
   background-color: #eb86fe;
@@ -38,8 +47,15 @@ button {
   top: 0;
 }
 
+.front {
+  height: 100vh;
+  width: 100vw;
+}
+
 header {
-  margin: 5px 20px;
+  position: sticky;
+  padding: 5px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 header ul, header ol {
   display: flex;
@@ -54,6 +70,13 @@ header li {
 }
 header li * {
   align-self: center;
+}
+
+.front-page .background {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=home.css.map */

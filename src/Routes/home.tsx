@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import "../styles/css/home.css";
 import FrontPage from "./home/front";
-import { Button } from "@mui/material";
+import LinkButton from "./home/link-button";
+
 
 const Home = () => {
   return (
@@ -9,19 +9,7 @@ const Home = () => {
       <header>
         <ul>
           <li>
-            <Link to={""} tabIndex={-1}>
-              <Button variant="outlined">Home</Button>
-            </Link>
-          </li>
-          <li>
-            <Link to={""} tabIndex={-1}>
-              <Button variant="outlined">Projects</Button>
-            </Link>
-          </li>
-          <li>
-            <Link to={""} tabIndex={-1}>
-              <Button variant="outlined">Contact</Button>
-            </Link>
+            <LinkButton to="">Home</LinkButton>
           </li>
         </ul>
       </header>

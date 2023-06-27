@@ -19,6 +19,15 @@ body {
   color: #fff;
 }
 
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+html::-webkit-scrollbar {
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0px;
+}
+
 button {
   padding: 10px 30px;
   background-color: #eb86fe;
